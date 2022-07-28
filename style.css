@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+@keyframes animation1{
+    from{letter-spacing: -20px; font-size: 20px;}
+    to{letter-spacing: 15px; font-size: 70px;}
+    
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./assets/img/orion5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Mukta';
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: #352473;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #0C0826;
+    border-radius: 15px;
+}
+
+.page-title-container{
+    height: 0px;
+    position: relative;
+    
+}
+#page-title{
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0px;
+    color: #0C0826;
+    text-shadow: 0px 0px 20px #0C0826;
+    font-weight:900;
+    animation-name: animation1;
+    animation-duration: 2s;
+
+
+}
+
+.container{
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.container-main{
+    
+    margin: 100px;
+    width: 100%;
+    
+    
+
+}
+
+.planet-area{
+    width: auto;
+    height: auto;
+    margin: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.planet-card{
+    box-shadow: 0px 0px 35px #0C0826;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter:blur(3px) ;
+    transition:box-shadow 1s, border-radius 2s;
+    justify-content: space-between;
+    
+    
+}
+
+.planet-card:hover{
+    
+    box-shadow: 0px 0px 150px #0C0826;
+    border-radius: 0px;
+}
+
+.planet-img{
+    
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.planet-info{
+    
+    width: 600px;
+}
+
+.planet-img-area{
+    width: 250px;
+    height: 150px;
+    margin: 20px auto;
+    
+}
+
+.img-style{
+    border-radius: 25px;
+}
+
+.animation-container{
+    display: flex;
+    height: 200px;
+    margin: 30px;
+    
+    justify-content: center;
+}
+.universe-img{
+    width: 20vw;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
+
+
+.text{
+    text-align: center;
+    height: 140px;
+    
+    overflow: auto;
+}
+
+.text::-webkit-scrollbar{
+    width: 15px;    
+    background-color: #352473;
+    border-radius: 10px;
+}
+
+.text::-webkit-scrollbar-thumb{
+    background-color: #0C0826;
+    border-radius: 15px;
+}
+
+.text-info{
+    color: white ;
+    letter-spacing: 1px;
+    
+}
+
+.button{
+    width: auto;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-txt{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #311E59 ;
+    background-color: #311E59;
+    height: 35px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #2D1F8C ;
+    transition: width 1s, background-color 1s, color 1s, border-radius 1s, letter-spacing 1s, border 3s;
+}
+
+.button-txt:hover{
+    width:170px ;
+    height: 40;
+    background-color: #8373BF;
+    color: black;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: 2px solid #8373BF;
+
+}
